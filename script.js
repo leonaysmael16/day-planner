@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // shows today's date and current time 
 
 function setTime() {
@@ -44,7 +38,9 @@ $('.saveBTN').on('click', function () {
 
 // load from local storage
 
-var hour1 = localStorage.getItem("9 am");
-$("#9-am").val(hour1);
+var timeArray = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 
-var hour2 = localStorage.getItem("10 am");
+for(var i = 0; i<timeArray.length; i++){
+    var hour = localStorage.getItem(timeArray[i]);
+    $("#" + timeArray[i]).val(hour)
+}
