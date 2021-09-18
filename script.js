@@ -8,25 +8,10 @@ function setTime() {
 setInterval(setTime, 1000);
 
 setTime()
-// save button
-
-// var btnSave = $(".saveBtn");
-
-// btnSave.onclick = function() {
-//     var time = $(this).parent().attr("id");
-//     var planner = $(this).siblings(".planner").val();
-
-//     localStorage.setItem(time, planner);
-// };
-
-// shows today's date and current time
 
 
 
 // save button
-
-
-
 $('.saveBTN').on('click', function () {
     var time = $(this).parent().attr('id');
     console.log('time', time);
